@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+pyjwt
+bcrypt
+python-dotenv
+google-genai
+google-auth
+requests
+email-validator
+psycopg[binary]
+.env
+# only needed for running the tests
+pytest
+httpx

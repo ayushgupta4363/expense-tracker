@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f4f5f7;
+  color: #1f2430;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 17px;
+  margin: 0 0 12px;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e3e6eb;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 9px 10px;
+  margin-bottom: 8px;
+  border: 1px solid #cdd2da;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fff;
+}
+
+button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2f5fd0;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.small {
+  padding: 5px 10px;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+button.danger {
+  background: #c43d3d;
+  margin-left: 0;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.row input {
+  margin-bottom: 0;
+}
+
+.row button {
+  white-space: nowrap;
+}
+
+.muted {
+  color: #6a7280;
+  font-size: 14px;
+}
+
+.error {
+  color: #b42323;
+  background: #fdecec;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.total {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.bar-row {
+  margin-bottom: 10px;
+}
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.bar-bg {
+  background: #e8ebf0;
+  border-radius: 4px;
+  height: 8px;
+}
+
+.bar {
+  background: #2f5fd0;
+  height: 8px;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px 6px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.right {
+  text-align: right;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 360px;
+}
+
+.login-card button[type="submit"] {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.google-box {
+  text-align: center;
+}
+
+.google-box > div {
+  display: flex;
+  justify-content: center;
+}
+
+.switch {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+}
